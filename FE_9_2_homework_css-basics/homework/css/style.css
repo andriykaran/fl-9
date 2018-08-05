@@ -1,0 +1,194 @@
+/*
+
+write your code here
+*/
+
+
+/*tack 1*/
+
+@media print {
+    body {
+        background: none
+    }
+    .tm-sidebar,
+    #about,
+    .heading,
+    .blocks,
+    #blocks,
+    #ideas,
+    section:last-of-type {
+        display: none
+    }
+    #home {
+        margin-bottom: 0
+    }
+    .tm-banner {
+        height: 185px;
+        padding: 15px;
+    }
+    .tm-main-content {
+        margin: auto
+    }
+    section {
+        width: 100%;
+    }
+    .tm-content-box {
+        flex-direction: column
+    }
+    .pad {
+        max-width: none;
+        padding: 0 50px;
+    }
+    h2.tm-section-title {
+        color: blue
+    }
+}
+
+
+/*tack 2 */
+
+.thumbnail {
+    border-radius: 50%
+}
+
+.tm-box-bg-title:hover {
+    background-color: #65c2e2;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*tack 3 */
+
+p::first-letter {
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+
+/*tack 4 */
+
+.tm-sidebar,
+.tm-content-box,
+section {
+    box-shadow: 1px 1px 4px 4px #acaaac;
+}
+
+
+/*tack 5 */
+
+section::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 20px 100px 0 0;
+    border-style: solid;
+    border-color: #31b0d5 transparent;
+}
+
+
+/*tack 6 */
+
+#home {
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 20px 100px 0 0;
+    border-color: #31b0d5 transparent;
+    border-style: solid;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#ideas .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+
+/*tack 7 */
+
+h2 + p {
+    font-style: italic;
+}
+
+
+/*tack 8 */
+
+p {
+    line-height: 2;
+}
+
+p::first-letter {
+    margin-left: 20px;
+}
+
+
+/*tack 9 */
+
+.heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.heading a:visited {
+    color: silver;
+}
+
+.heading a:hover {
+    text-decoration: underline;
+    color: #76cdd7;
+}
+
+.heading li:first-child::after,
+.heading li:nth-child(3)::after {
+    content: "New";
+    color: red;
+    vertical-align: text-top;
+    font-size: 50%;
+}
+
+
+/*tack 10 */
+
+.blocks .box:nth-of-type(1),
+.blocks .box:nth-of-type(3),
+.blocks .box:nth-of-type(5) {
+    background-color: #f2f2f2;
+}
+
+.blocks .box p::first-letter {
+    margin-left: 0;
+    color: black;
+}
+
+
+/*tack 11 */
+
+nav ul li:not(:last-child) {
+    border-bottom: 1px dotted silver;
+}
+
+
+/*tack 12 */
+
+#contact_subject,
+#contact_name,
+button[type=submit] {
+    color: red;
+}
+
+.mandatory-field::after {
+    content: '*';
+    color: red;
+}
+
+button[type=submit]:hover {
+    background-color: #31b0d5;
+    color: white;
+}
