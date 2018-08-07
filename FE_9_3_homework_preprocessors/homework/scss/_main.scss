@@ -1,0 +1,151 @@
+body {
+    font-family: $fontFamiliStile;
+    background-color: $bodyBGC;
+}
+
+.main-wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    .logo {
+        width: 30%;
+        img {
+            max-width: 100%;
+        }
+    }
+    nav {
+        display: flex;
+        width: 70%;
+        height: 50%;
+        border-bottom: solid 2px $navBorderColor;
+        border-top: solid 2px $navBorderColor;
+        text-transform: uppercase;
+        padding: 20px 0px;
+        a {
+            width: 33.33%;
+            display: block;
+            text-align: center;
+            justify-content: space-around;
+            text-decoration: none;
+            font-weight: bold;
+            color: $toolbarColor;
+        }
+    }
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 60px 0 20px 0;
+    input {
+        width: 20%;
+        margin: 20px 0;
+        border: solid 2px $toolbarColor;
+        color: $toolbarColor;
+        font-weight: bold;
+        padding: 10px 10px 10px 20px;
+    }
+}
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+article {
+    width: 49%;
+    border: 20px solid transparent;   
+    box-sizing: border-box;
+    background-color: $articleBGC;
+    margin-bottom: 40px;
+    align-self: flex-start;
+    img {
+        max-width: 100%;
+    }
+    .post-description {
+        color: $postDescriptionColor;
+        border-bottom: solid 3px $postDescriptionBorderColor;
+    }
+    h3 {
+        color: $postH3Color;
+        font-weight: bold;
+    }
+    p {
+        color: $postPColor;
+    }
+}
+
+.about {
+    h1 {
+        text-align: right;
+        color: $aboutH1Color;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        color: $postPColor;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    h1 {
+        text-align: right;
+        color: $contactFormHColor;
+        font-weight: bold;
+    }
+    h4 {
+        text-align: right;
+        color: $contactFormHColor;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+        input {
+            background-color:  	transparent;
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px 10px;
+            border: solid 2px $contactFormInputBorderColor;
+            box-sizing: border-box;
+            font-family: $fontFamiliStile;
+        }
+        textarea {
+            background-color:  	transparent;
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px 10px;
+            min-height: 100px;
+            border: solid 2px $contactFormInputBorderColor;
+            box-sizing: border-box;
+            font-family: $fontFamiliStile;
+        }
+        input[type=submit] {
+            background-color: $postFormSubmitColor;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 25%;
+        }
+    }
+}
+
+footer {
+    color: $footerColor;
+}
