@@ -48,6 +48,8 @@ function addTask(taskText) {
         taskListItem.appendChild(deleteBox);
     
         newActionInput.value = '';
+        addButton.disabled = true;  
+        
         
         
     } else {
@@ -63,8 +65,8 @@ function addTask(taskText) {
     deleteBox.onclick = function() {
         taskListItem.remove();
         taskCounter--;
-//        newActionInput.disabled = false;
-//        addButton.disabled = false;   
+        newActionInput.disabled = false;
+        addButton.disabled = false;   
     }
     
     chekBox.onclick = function() {
